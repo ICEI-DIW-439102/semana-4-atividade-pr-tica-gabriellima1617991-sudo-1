@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eee;
+}
+
+/* HEADER */
+.top-bar {
+    display: flex;
+    align-items: center;
+    background: #3b8ea5;
+    padding: 10px;
+}
+
+.top-bar input {
+    flex: 1;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+}
+
+.user-area {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    background: blue;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* NAV */
+.nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background: #555;
+    margin: 0;
+    padding: 10px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* LOCATION */
+.location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #6aaed6;
+    margin: 20px auto;
+    padding: 15px;
+    width: 60%;
+    border-radius: 10px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    width: 30%;
+    background: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* FORMULÁRIO */
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.form input {
+    margin: 5px 0;
+    padding: 8px;
+}
+
+.form button {
+    padding: 8px;
+    background: #3b8ea5;
+    color: white;
+    border: none;
+}
+
+/* BOTÕES */
+.buttons {
+    display: flex;
+}
+
+.buttons button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: #3b8ea5;
+    color: white;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    position: relative;
+}
