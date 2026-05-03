@@ -10,10 +10,10 @@ Nessa atividade, você deverá montar a página inicial do projeto escolhido, a 
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome:Gabriel Rodrigues Lima
+- Matricula:908545
+- Proposta de projeto escolhida:lugar
+- Breve descrição sobre seu projeto:Um site onde ele te mostra restaurantes da regiao e o que eles oferecem,alem de a avaliaçao de cada um.Podendo ter post de pessoas e comentarios.
 
 
 ## Print do(s) wireframe(s) criado

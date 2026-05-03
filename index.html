@@ -1,98 +1,180 @@
-<link rel="stylesheet" href="style.css">
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LPC</title>
+    <title>SaborBH</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="light-mode">
 
-<header class="header">
-    <div class="top-bar">
-        <span>↩</span>
-        <span>↻</span>
-        <input type="text" value="https://www.LPC.com">
+    <!-- Header -->
+    <header class="header">
+        <div class="header-left">
+            <button id="menu-btn" class="icon-btn">☰</button>
+            <div class="logo">
+                <img src="img/logo-chef.jpeg" alt="Logo Garçom" class="logo-img">
+                <h1>SaborBH</h1>
+            </div>
+        </div>
+        <div class="header-center">
+            <input type="text" id="search-bar" placeholder="Pesquisar restaurante...">
+        </div>
+        <div class="header-right">
+            <button class="icon-btn">🔔</button>
+            <button class="icon-btn" id="header-settings-btn">⚙️</button>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <ul class="sidebar-menu">
+            <li><button class="sidebar-item" id="settings-btn">⚙️ Configurações</button></li>
+            <li><button class="sidebar-item" id="lang-btn">🌐 Linguagem</button></li>
+            <li><button class="sidebar-item" id="reviews-btn">⭐ Avaliações</button></li>
+            <li><button class="sidebar-item" id="pubs-btn">📰 Publicações</button></li>
+            <li><button class="sidebar-item" id="feedback-btn">💬 Feedback</button></li>
+        </ul>
+    </div>
+    
+    <div class="main-wrapper">
+        <!-- Navegação Tabs -->
+        <nav class="tabs">
+            <button class="tab-btn active">Home</button>
+            <button class="tab-btn">Trending</button>
+            <button class="tab-btn">Favoritos</button>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content">
+            <section class="section-title">
+                <h2>Restaurantes Recomendados</h2>
+            </section>
+
+            <section class="cards-grid" id="restaurant-list">
+                <!-- Card 1 -->
+                <article class="card" data-name="Cantina Bella Italia">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400" alt="Cantina Bella Italia">
+                    <div class="card-info">
+                        <h3>Cantina Bella Italia</h3>
+                        <p class="address">Rua Fictícia, 123 - Savassi, BH</p>
+                        <p class="rating">⭐⭐⭐⭐⭐ (4.8)</p>
+                        <p class="desc">As melhores massas tradicionais italianas da região com ambiente familiar.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-details" data-title="Cantina Bella Italia" data-desc="As melhores massas tradicionais italianas da região. Funcionamento de Terça a Domingo.">Detalhes</button>
+                            <button class="btn btn-feedback">Avaliar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card" data-name="Sushi Zen Garden">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400" alt="Sushi Zen Garden">
+                    <div class="card-info">
+                        <h3>Sushi Zen Garden</h3>
+                        <p class="address">Av. Fake, 456 - Lourdes, BH</p>
+                        <p class="rating">⭐⭐⭐⭐ (4.5)</p>
+                        <p class="desc">Experiência autêntica japonesa com ingredientes frescos e selecionados.</p>
+                        <div class="card-buttons">
+                            <!-- Link Requerido -->
+                            <a href="../db/pmg-es-2026-1-ti1-0438100-greenguard/.vscode/Gabriel.html" class="btn btn-details-link" style="text-decoration:none; display:inline-block; text-align:center;">Ver Especial</a>
+                            <button class="btn btn-feedback">Avaliar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card" data-name="Churrascaria Fogo Gaucho">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400" alt="Churrascaria Fogo Gaucho">
+                    <div class="card-info">
+                        <h3>Churrascaria Fogo Gaucho</h3>
+                        <p class="address">Rodovia X, 789 - Pampulha, BH</p>
+                        <p class="rating">⭐⭐⭐⭐⭐ (4.9)</p>
+                        <p class="desc">O verdadeiro churrasco gaúcho com cortes nobres e buffet completo.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-details" data-title="Churrascaria Fogo Gaucho" data-desc="Rodízio completo com mais de 20 cortes de carne.">Detalhes</button>
+                            <button class="btn btn-feedback">Avaliar</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="section-title">
+                <h2>Adicionados Recentemente</h2>
+            </section>
+            <!-- Pode-se adicionar mais cards no futuro -->
+            <p style="padding: 0 20px;">Fique de olho em novos locais!</p>
+
+        </main>
     </div>
 
-    <div class="user-area">
-        <div class="menu">☰</div>
-        <div class="avatar"></div>
-        <h2>Bem-vindo, Gabriel!</h2>
+    <footer class="footer">
+        <p>&copy; 2026 SaborBH</p>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Modal Settings -->
+    <div id="modal-settings" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Configurações</h2>
+            <div class="theme-toggle">
+                <label>Tema Escuro: </label>
+                <input type="checkbox" id="theme-checkbox">
+            </div>
+        </div>
     </div>
-</header>
 
-<nav class="nav">
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Locais</a></li>
-        <li><a href="#">Contato</a></li>
-    </ul>
-</nav>
+    <!-- Modal Language -->
+    <div id="modal-lang" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Selecione o Idioma</h2>
+            <select id="lang-select">
+                <option value="pt-br">Português (PT-BR)</option>
+                <option value="en">English (EN)</option>
+                <option value="es">Español (ES)</option>
+            </select>
+        </div>
+    </div>
 
-<main class="main">
-
-    <section class="location">
-        <span>📍 Localização</span>
-        <span>✖</span>
-    </section>
-
-    <section class="cards">
-
-        <article class="card">
-            <img src="https://picsum.photos/300/200" alt="imagem">
-
-            <!-- FORMULÁRIO DENTRO DO CARD -->
-            <form class="form">
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="Email">
-                <button type="submit">Enviar</button>
+    <!-- Modal Avaliação/Feedback Card -->
+    <div id="modal-card-feedback" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Avaliar Restaurante</h2>
+            <form id="form-card-feedback">
+                <label>Estrelas (1 a 5):</label>
+                <input type="number" min="1" max="5" value="5" required>
+                <label>Comentário:</label>
+                <textarea rows="4" placeholder="Deixe seu comentário..." required></textarea>
+                <button type="submit" class="btn btn-submit">Enviar</button>
             </form>
+        </div>
+    </div>
 
-            <div class="buttons">
-                <button>Detalhes</button>
-                <button>Feedback</button>
-            </div>
-        </article>
+    <!-- Modal Detalhes -->
+    <div id="modal-details" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="details-title">Nome</h2>
+            <p id="details-desc">Descrição completa aqui.</p>
+        </div>
+    </div>
 
-        <article class="card">
-            <img src="https://picsum.photos/300/200" alt="imagem">
-
-            <form class="form">
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="Email">
-                <button type="submit">Enviar</button>
+    <!-- Modal Sidebar Feedback -->
+    <div id="modal-app-feedback" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Feedback do App</h2>
+            <form id="form-app-feedback">
+                <input type="text" placeholder="Seu nome" required>
+                <textarea rows="4" placeholder="Sugestões ou problemas..." required></textarea>
+                <button type="submit" class="btn btn-submit">Enviar Feedback</button>
             </form>
+        </div>
+    </div>
 
-            <div class="buttons">
-                <button>Detalhes</button>
-                <button>Feedback</button>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="https://picsum.photos/300/200" alt="imagem">
-
-            <form class="form">
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="Email">
-                <button type="submit">Enviar</button>
-            </form>
-
-            <div class="buttons">
-                <button>Detalhes</button>
-                <button>Feedback</button>
-            </div>
-        </article>
-
-    </section>
-
-</main>
-
-<footer class="footer">
-    <p>© 2026 LPC</p>
-</footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
