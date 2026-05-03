@@ -10,21 +10,33 @@ Nessa atividade, você deverá montar a página inicial do projeto escolhido, a 
 
 ## Informações Gerais
 
+<<<<<<< HEAD
 - Nome:Gabriel Rodrigues Lima
 - Matricula:908545
 - Proposta de projeto escolhida:lugar
 - Breve descrição sobre seu projeto:Um site onde ele te mostra restaurantes da regiao e o que eles oferecem,alem de a avaliaçao de cada um.Podendo ter post de pessoas e comentarios.
+=======
+- Nome:
+- Matricula:
+- Proposta de projeto escolhida:
+- Breve descrição sobre seu projeto:
+>>>>>>> 6567fd6cb78026fca792496ae868429af7850063
 
 
 ## Print do(s) wireframe(s) criado
 > Sugestão, use o Excalidraw para isso. Utilize esse [template básico](https://excalidraw.com/#json=LU-8hwcQEwzk11FwO8Opo,qPU9K6cNUEzlXzwOuKMIlQ) para você começar. 
 
+<<<<<<< HEAD
 
+=======
+<<  COLOQUE A IMAGEM AQUI >>
+>>>>>>> 6567fd6cb78026fca792496ae868429af7850063
 
 
 
 ## Print da home-page criada
 
+<<<<<<< HEAD
 ## Wireframe
 
 ![Wireframe](img/wireframe.png)
@@ -32,3 +44,6 @@ Nessa atividade, você deverá montar a página inicial do projeto escolhido, a 
 ## Home Page
 
 ![Home Page](img/homepage.png)
+=======
+<<  COLOQUE A IMAGEM AQUI >>
+>>>>>>> 6567fd6cb78026fca792496ae868429af7850063
